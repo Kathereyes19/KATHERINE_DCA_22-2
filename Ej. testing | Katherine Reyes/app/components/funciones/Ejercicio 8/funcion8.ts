@@ -6,3 +6,14 @@
  * - si el arreglo contiene 1 o 2 buenas ideas entonces el mensaje es "publicar"
  * - si el arreglo contiene más de 2 buenas ideas entonces el mensaje es "fantastico"
  */
+
+ function fun8(array:Array<string>) {
+
+    if (array.includes('buena') == true) {
+        return ('publicar, fantastico');
+    } else {
+        return ('fallo');
+    }
+}
+
+module.exports = fun8;

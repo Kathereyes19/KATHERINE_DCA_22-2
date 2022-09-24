@@ -7,3 +7,12 @@
  * ejem:
  * ["rat", "dog", "cat", "parrot", "cat"] y ["cat", "lizard", "rat", "cat"] devolverán ["cat", "rat"]
  */
+
+ function fun4(arraywordA:string[], arraywordB:string[]) {
+  
+    const list = arraywordA.filter(element => arraywordB.includes(element));
+    return list;
+  }
+  
+  module.exports = fun4;
+  

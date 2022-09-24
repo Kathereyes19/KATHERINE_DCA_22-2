@@ -8,3 +8,28 @@
  *
  * note que los arreglos pueden ser de diferente tamaños y el contenido puede ser cualquier tipo de dato
  */
+
+ let lettersarrayA: string [] = [];
+ lettersarrayA = ["c", "i", "m"];
+
+let lettersarrayB: string [] = [];
+ lettersarrayB = ["d", "a", "o"];
+
+function fun1(arrayA: Array<string>, arrayB: Array<string>){
+  
+  let size_array = arrayA.length + arrayB.length
+  let array= [];
+  for (let a = 0; a < size_array; a++) {
+      if(arrayA[a] !== undefined){
+          array.push(arrayA[a]);
+      }
+      if(arrayB[a] !== undefined){
+          array.push(arrayB[a]);
+      }
+  }
+  return array;
+}
+
+console.log(fun1(lettersarrayA,lettersarrayB));
+
+module.exports = fun1;
